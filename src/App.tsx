@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 //import LoadingScreen from './components/LoadingScreen';
-import OpeningScreen from './components/OpeningScreen';
+//import OpeningScreen from './components/OpeningScreen';
 import HeroSection from './components/HeroSection';
 //import CoupleSection from './components/CoupleSection';
 import WeddingDetails from './components/WeddingDetails';
@@ -13,10 +13,10 @@ import Footer from './components/Footer';
 import FloatingPetals from './components/FloatingPetals';
 import MusicToggle from './components/MusicToggle';
 
-type Phase =  'opening' | 'main';
+type Phase = 'main';
 
 export default function App() {
-  const [phase, setPhase] = useState<Phase>('opening');
+  const [phase, setPhase] = useState<Phase>('main');
 
   return (
     <div className="min-h-screen bg-[#0A0702] overflow-x-hidden">
