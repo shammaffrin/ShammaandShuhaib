@@ -26,11 +26,11 @@ export default function App() {
         )}
       </AnimatePresence> */}
 
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {phase === 'opening' && (
           <OpeningScreen key="opening" onOpen={() => setPhase('main')} />
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <AnimatePresence>
         {phase === 'main' && (
